@@ -257,9 +257,9 @@ nav a {
 .smell2,
 .smell3,
 .smell4{
-  width: calc(30% - 32px);
+  width: 28%;
   height: 55%;
-  margin:0 32px;
+  margin:0 2.5%;
   display: block;
 }
 
