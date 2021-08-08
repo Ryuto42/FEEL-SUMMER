@@ -1,0 +1,658 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  padding-top: 60px;
+  font-family: 'Kiwi Maru', serif;
+}
+
+
+/* ナビゲーションバー */
+
+nav {
+  height: 60px;
+  background-color: #b2dbde;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+
+  animation-name: fadeInAnime1;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+
+  animation-delay: 1s;
+}
+
+nav li {
+  list-style-type: none;
+  float: right;
+  margin: 20px 20px 0px;
+}
+
+nav a {
+  display: block;
+  text-decoration: none;
+}
+
+.nav-logo {
+  float: left;
+  margin: 17px 20px 0px;
+}
+
+.nav-link6 {
+  margin-top: 3px;
+}
+
+#introduction {
+  padding-top: 180px;
+}
+
+#eyesight,
+#hearing,
+#touch,
+#taste,
+#smell {
+  padding-top: 80px;
+}
+
+.nav-link {
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  opacity: 0.7;
+  transition: 0.2s;
+}
+
+/* トップ画面 */
+
+.main-visual {
+  width: auto;
+  height: 90vh;
+}
+
+.main-visual-img {
+  width: auto;
+  height: 83%;
+  left: 7%;
+  top: 10%;
+  max-height: 100%;
+  position: absolute;
+
+  animation-name: fadeInAnime;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+
+  animation-delay: 0s;
+}
+
+@keyframes fadeInAnime1 {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0.9;
+  }
+}
+
+@keyframes fadeInAnime {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.main-visual-img2 {
+  animation-name: fadeInAnime;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+
+  animation-delay: 0.6s;
+}
+
+.main-visual-img3 {
+  animation-name: fadeInAnime;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+
+  animation-delay: 1s;
+}
+
+.main-visual-text {
+  position: absolute;
+  float: right;
+  right: 0;
+  bottom: 0;
+
+  animation-name: fadeInAnime;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+
+  animation-delay: 0.6s;
+}
+
+
+/* はじめにの画面 */
+
+
+.introduction {
+  width: 65vw;
+  height: 60vh;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  min-height: 500px;
+}
+
+#introduction-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  /* padding-top: 10px; */
+}
+
+.introduction p {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 8%;
+}
+
+
+/* 流れてくるエフェクト */
+
+.fadeInRight {
+  -webkit-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  visibility: visible !important;
+}
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-20px);
+    -ms-transform: translateX(-20px);
+    transform: translateX(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+/* 共通 */
+
+#eyesight,
+#hearing,
+#touch,
+#taste {
+  width: 65vw;
+  height: 116vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+#smell{
+  width: 65vw;
+  height: 115vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.eyesight,
+.hearing,
+.touch,
+.taste{
+  width: auto;
+  height: 45%;
+  margin-top: 5%;
+  display: block;
+}
+.smell{
+  width: auto;
+  height: 15%;
+  margin-top: 5%;
+  display: block;
+}
+
+.eyesight2,
+.hearing2,
+.touch2,
+.taste2 {
+  width: auto;
+  height: 39%;
+  display: block;
+}
+.smell2,
+.smell3,
+.smell4{
+  width: calc(30% - 32px);
+  height: 55%;
+  margin:0 32px;
+  display: block;
+}
+
+#eyesight-logo,
+#hearing-logo,
+#touch-logo,
+#taste-logo,
+#smell-logo {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 35%;
+}
+
+#eyesight-main,
+#hearing-main,
+#touch-main,
+#taste-main{
+  width: 42%;
+  height: auto;
+  float: left;
+}
+
+.eyesight-text,
+.hearing-text,
+.touch-text,
+.taste-text{
+  /* padding-top: 10%; */
+  padding-left: 50%;
+  width: 38%;
+}
+.smell-text{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  font-size: 25px;
+}
+
+.eyesight-border,
+.hearing-border,
+.touch-border,
+.taste-border {
+  width: 60%;
+  padding-top: 4%;
+  margin-bottom: 4%;
+  border-bottom: dashed 2px;
+}
+
+#eyesight-main2,
+#hearing-main2,
+#touch-main2,
+#taste-main2 {
+  width: 38%;
+  height: auto;
+  margin-right: 10%;
+  float: right;
+}
+
+.eyesight-text2,
+.hearing-text2,
+.touch-text2,
+.taste-text2 {
+  width: 40%;
+  margin-left: 4%;
+}
+
+#eyesight p,
+#hearing p,
+#touch p,
+#taste p,
+#smell p {
+  font-size: 17px;
+}
+
+#hearing-main2{
+  width: 40%;
+  height: auto;
+}
+
+.smell2,
+.smell3,
+.smell4{
+  float: left;
+}
+#smell-main2,
+#smell-main3,
+#smell-main4{
+  width: 100%;
+  height: 43%;
+  object-fit: cover; 
+}
+
+.smell2 p,
+.smell3 p,
+.smell4 p{
+  margin-top: 5%;
+}
+.smell2 h1,
+.smell3 h1,
+.smell4 h1{
+  margin-top: 2%;
+}
+
+
+.eyesight-button a {
+  display: flex;
+  text-decoration: none;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin-top: 10%;
+  padding: 0.6em 1.2em;
+  width: 35%;
+  color: #333;
+  font-size: 16.8px;
+  font-weight: 700;
+  background-color: #e4e4e43b;
+  transition: 0.3s;
+}
+.eyesight-button a::before {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  right: -6px;
+  width: 100%;
+  height: 1px;
+  background-color: #bbbbbb;
+  transition: 0.2s ease 0s;
+}
+.eyesight-button a::after {
+  content: '';
+  position: absolute;
+  top: 7px;
+  right: -7px;
+  width: 2px;
+  height: 100%;
+  background-color: #bbbbbb;
+  transition: 0.2s ease 0.2s;
+}
+.eyesight-button a:hover::before {
+  width: 0%;
+}
+.eyesight-button a:hover::after {
+  height: 0%;
+}
+.eyesight-button a:hover {
+  text-decoration: none;
+  background-color: #f1c1b971;
+}
+
+.taste-button a {
+  display: flex;
+  text-decoration: none;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin-top: 10%;
+  padding: 0.6em 1.2em;
+  width: 35%;
+  color: #333;
+  font-size: 15.9px;
+  font-weight: 700;
+  background-color: #e4e4e43b;
+  transition: 0.3s;
+}
+.taste-button a::before {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  right: -6px;
+  width: 100%;
+  height: 1px;
+  background-color: #bbbbbb;
+  transition: 0.2s ease 0s;
+}
+.taste-button a::after {
+  content: '';
+  position: absolute;
+  top: 7px;
+  right: -7px;
+  width: 2px;
+  height: 100%;
+  background-color: #bbbbbb;
+  transition: 0.2s ease 0.2s;
+}
+.taste-button a:hover::before {
+  width: 0%;
+}
+.taste-button a:hover::after {
+  height: 0%;
+}
+.taste-button a:hover {
+  text-decoration: none;
+  background-color: #eef09c62;
+}
+
+.smell-button a {
+  display: flex;
+  text-decoration: none;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin-top: 10%;
+  padding: 0.8em 1em;
+  width: 52.8%;
+  color: #333;
+  font-size: 14px;
+  font-weight: 700;
+  background-color: #e4e4e43b;
+  transition: 0.3s;
+}
+.smell-button a::before {
+  content: '';
+  position: absolute;
+  bottom: -7px;
+  right: -7px;
+  width: 100%;
+  height: 2px;
+  background-color: #bbbbbb;
+  transition: 0.2s ease 0s;
+}
+.smell-button a::after {
+  content: '';
+  position: absolute;
+  top: 7px;
+  right: -7px;
+  width: 2px;
+  height: 100%;
+  background-color: #bbbbbb;
+  transition: 0.2s ease 0.2s;
+}
+.smell-button a:hover::before {
+  width: 0%;
+}
+.smell-button a:hover::after {
+  height: 0%;
+}
+.smell-button a:hover {
+  text-decoration: none;
+  background-color: #bae0cba2;
+}
+
+
+/* フッター */
+footer {
+  background-color: #b2dbde60;
+  height: 40px;
+}
+
+
+
+.footer-text {
+  text-align: center;
+  font-size: 14px;
+  padding-top: 10px
+}
+
+
+
+@media all and (max-width:480px){
+  
+  nav{
+    height: 50px;
+  }
+  .nav-logo{
+    width: 50%;
+    height: 55%;
+    margin: 16px 14px 0px;
+  }
+  nav ul{
+    width: 0;
+    height: 0;
+  }
+
+  .main-visual{
+    height: 65vh;
+  }
+  .main-visual-img{
+    width: 120%;
+    height: 40%;
+    top: 13%;
+    left: -30%;
+  }
+  .main-visual-text{
+    bottom: 42%;
+    width: 70%;
+    height: 6%;
+  }
+
+  .introduction{
+    width:82vw;
+  }
+  #introduction{
+    padding-top: 20px;
+  }
+  #introduction-logo{
+    width: 80%;
+  }
+  .introduction p{
+    font-size: 19px;
+  }
+
+  #eyesight,
+  #hearing,
+  #touch {
+    width: 82vw;
+    height: 135vh;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #taste {
+    width: 82vw;
+    height: 150vh;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #smell{
+    width: 94vw;
+    height: 220vh;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .taste{
+    height: 50%;
+  }
+  #eyesight-logo,
+  #hearing-logo,
+  #touch-logo,
+  #taste-logo,
+  #smell-logo {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 60%;
+  }
+  #eyesight-main,
+  #hearing-main,
+  #touch-main,
+  #taste-main{
+    width: 100%;
+    height: auto;
+  }
+  .eyesight-text,
+  .hearing-text,
+  .touch-text,
+  .taste-text{
+    padding-left: 0%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #eyesight-main2,
+  #hearing-main2,
+  #touch-main2,
+  #taste-main2 {
+    width: 100%;
+    margin-right: 0%;
+    height: auto;
+  }
+
+  .eyesight-text2,
+  .hearing-text2,
+  .touch-text2,
+  .taste-text2 {
+    width: 100%;
+    margin-left: 0%;
+  }
+  .taste-button a {
+    margin-top: 2%;
+  }
+
+  #smell p{
+    font-size: 16.5px;
+  }
+  .smell{
+    margin-top: 15%;
+    height: 6%;
+  }
+  .smell2,
+  .smell3,
+  .smell4{
+    float: none;
+  }
+  .smell2,
+  .smell3,
+  .smell4{
+    width: 85%;
+    height: 28%;
+    margin-right:auto;
+    margin-left: auto;
+    display: block;
+  }
+}
